@@ -8,6 +8,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "書式設定", "書式設�
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_01_確認課題", "01_01_確認課題\01_01_確認課題.vcxproj", "{8D8D8DE1-B394-466B-A366-F2817421F872}"
+EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "00_01_確認課題", "00_01_確認課題\00_01_確認課題.vcxproj", "{FED47A31-7CAE-478F-A682-DE7FAB7BEB25}"
 EndProject
 Global
@@ -18,6 +20,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D8D8DE1-B394-466B-A366-F2817421F872}.Debug|x64.ActiveCfg = Debug|x64
+		{8D8D8DE1-B394-466B-A366-F2817421F872}.Debug|x64.Build.0 = Debug|x64
+		{8D8D8DE1-B394-466B-A366-F2817421F872}.Debug|x86.ActiveCfg = Debug|Win32
+		{8D8D8DE1-B394-466B-A366-F2817421F872}.Debug|x86.Build.0 = Debug|Win32
+		{8D8D8DE1-B394-466B-A366-F2817421F872}.Release|x64.ActiveCfg = Release|x64
+		{8D8D8DE1-B394-466B-A366-F2817421F872}.Release|x64.Build.0 = Release|x64
+		{8D8D8DE1-B394-466B-A366-F2817421F872}.Release|x86.ActiveCfg = Release|Win32
+		{8D8D8DE1-B394-466B-A366-F2817421F872}.Release|x86.Build.0 = Release|Win32
 		{FED47A31-7CAE-478F-A682-DE7FAB7BEB25}.Debug|x64.ActiveCfg = Debug|x64
 		{FED47A31-7CAE-478F-A682-DE7FAB7BEB25}.Debug|x64.Build.0 = Debug|x64
 		{FED47A31-7CAE-478F-A682-DE7FAB7BEB25}.Debug|x86.ActiveCfg = Debug|Win32
