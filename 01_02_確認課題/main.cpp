@@ -30,4 +30,6 @@ int main() {
 	for(const auto& id : ids) {
 		std::cout << id + "@g.neec.ac.jp" << std::endl;
 	}
+
+	return 0;
 }
