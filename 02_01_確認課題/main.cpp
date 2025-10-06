@@ -1,7 +1,7 @@
 #include <stdio.h>
-template <typename type1>
+template <typename type>
 
-type1 Min(type1 num1, type1 num2) {
+type Min(type num1, type num2) {
 	if(num1 < num2) {
 		return num1;
 	}
