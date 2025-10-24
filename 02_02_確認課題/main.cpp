@@ -1,24 +1,34 @@
 #include <stdio.h>
 
-int SalaryComparison(int recursionsalary, const int salary, int hourCount) {
-	recursionsalary = recursionsalary * 2 - 50;
-
-	//salaryより大きくなったら再帰を終わらせる
-	if(recursionsalary > salary) {
-		return hourCount;
+//再帰関数
+int Recursion(int num) {
+	int newNum = 0;
+	newNum = num * 2 - 50;
+	if(newNum >= 999999) {
+		return newNum;
 	}
 
-	hourCount++;
-	return SalaryComparison(recursionsalary, salary, hourCount);
+	return Recursion(newNum);
+}
+
+//比較して出力する関数
+void Comparation(int num, int num2) {
+	int i = 1;
+	printf("給料比較\n");
+	while(num * i > Recursion(num2) * i) {
+		printf("労働時間 %d時間  一般給料 : 時給%d円  トータル%d円\n", i, num, num * i);
+		printf("労働時間 %d時間  再帰給料 : 時給%d円  トータル%d円\n\n", i, Recursion(num2), Recursion(num2) * i);
+		i++;
+	}
 }
 
 int main() {
 	//一般給料
 	const int salary = 1226;
-	int recursionsalary = 100;
-	int hourCount = 1;
+	//再帰関数の給料
+	int recursionSalary = 100;
 
-	printf("%d", SalaryComparison(recursionsalary, salary, hourCount));
+	Comparation(salary, recursionSalary);
 
 	return 0;
 }
