@@ -24,6 +24,7 @@
     <ProjectGuid>{663498bf-494e-4275-98e1-bc3e75e5ddbc}</ProjectGuid>
     <RootNamespace>My0302確認課題</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>03_02</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
