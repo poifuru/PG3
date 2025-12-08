@@ -8,23 +8,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "書式設定", "書式設�
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_01_確認課題", "01_01_確認課題\01_01_確認課題.vcxproj", "{8D8D8DE1-B394-466B-A366-F2817421F872}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_01", "01_01\01_01.vcxproj", "{8D8D8DE1-B394-466B-A366-F2817421F872}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "00_01_確認課題", "00_01_確認課題\00_01_確認課題.vcxproj", "{FED47A31-7CAE-478F-A682-DE7FAB7BEB25}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "00_01", "00_01\00_01.vcxproj", "{FED47A31-7CAE-478F-A682-DE7FAB7BEB25}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_02_確認課題", "01_02_確認課題\01_02_確認課題.vcxproj", "{8CEB5FFB-6C14-46DA-B79F-870B709239AF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_02", "01_02\01_02.vcxproj", "{8CEB5FFB-6C14-46DA-B79F-870B709239AF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_01_確認課題", "02_01_確認課題\02_01_確認課題.vcxproj", "{849C8A22-A1B0-4B32-86F2-69C23DD67BB0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_01", "02_01\02_01.vcxproj", "{849C8A22-A1B0-4B32-86F2-69C23DD67BB0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_02_確認課題", "02_02_確認課題\02_02_確認課題.vcxproj", "{4D50BF6D-A243-4301-9F1B-6040330C2257}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_02", "02_02\02_02.vcxproj", "{4D50BF6D-A243-4301-9F1B-6040330C2257}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_03_確認課題", "02_03_確認課題\02_03_確認課題.vcxproj", "{185A603E-F7BA-405B-93FD-045BF71EE833}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_03", "02_03\02_03.vcxproj", "{185A603E-F7BA-405B-93FD-045BF71EE833}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_04_確認課題", "02_04_確認課題\02_04_確認課題.vcxproj", "{BF620B7D-F785-4DDC-A887-280C5BF1E362}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_04", "02_04\02_04.vcxproj", "{BF620B7D-F785-4DDC-A887-280C5BF1E362}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_01_確認課題", "03_01_確認課題\03_01_確認課題.vcxproj", "{C35A1870-A401-489F-ABBF-AC1D8CD989AA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_01", "03_01\03_01.vcxproj", "{C35A1870-A401-489F-ABBF-AC1D8CD989AA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_02_確認課題", "03_02_確認課題\03_02_確認課題.vcxproj", "{663498BF-494E-4275-98E1-BC3E75E5DDBC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_02", "03_02\03_02.vcxproj", "{663498BF-494E-4275-98E1-BC3E75E5DDBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
