@@ -13,7 +13,7 @@ public:
 	};
 
 	void Comparison() {
-		if(num1_ < num2_) {
+		if (num1_ < num2_) {
 			printf("%f\n", static_cast<float>(num1_));
 		}
 		else {

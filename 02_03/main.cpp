@@ -31,7 +31,7 @@ int main() {
 void ShowResult(int roll, int userGuess) {
 	printf("出目は%dでした\n", roll);
 	int judge = roll % 2;
-	if(judge == 0 && userGuess == 0 || judge == 1 && userGuess == 1) {
+	if (judge == 0 && userGuess == 0 || judge == 1 && userGuess == 1) {
 		printf("正解\n");
 	}
 	else {

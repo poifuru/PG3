@@ -22,17 +22,17 @@ int main(int argc, const char* argv[]) {
 	std::function<void(int, int)> function = [](int roll, int userGuess) {
 		printf("出目は%dでした\n", roll);
 		int judge = roll % 2;
-		if(judge == 0 && userGuess == 0 || judge == 1 && userGuess == 1) {
+		if (judge == 0 && userGuess == 0 || judge == 1 && userGuess == 1) {
 			printf("正解\n");
 		}
 		else {
 			printf("不正解\n");
 		}
-	};
+		};
 
 	//判定
 	DelayReveal(function, 3000, roll, userGuess);
-	
+
 	return 0;
 }
 
