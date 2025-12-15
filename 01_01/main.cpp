@@ -43,6 +43,7 @@ int main() {
 		cout << *itr << "\n";
 	}
 
+	//リストに入っている文字列をすべて出力
 	for(list<const char*>::iterator itr = yamanoteLine.begin(); itr != yamanoteLine.end(); ++itr) {
 		if(*itr == "Tabata") {
 			itr = yamanoteLine.insert(itr, "Nishi-Nippori");
@@ -55,6 +56,7 @@ int main() {
 		cout << *itr << "\n";
 	}
 
+	//リストに入っている文字列をすべて出力
 	for(list<const char*>::iterator itr = yamanoteLine.begin(); itr != yamanoteLine.end(); ++itr) {
 		if(*itr == "Tamachi") {
 			itr = yamanoteLine.insert(itr, "Takanawa Gateway");
