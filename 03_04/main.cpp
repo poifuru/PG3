@@ -1,32 +1,34 @@
-#include "DeathEater.h"
-#include "Dementor.h"
-#include "Load.h"
+#include "IShape.h"
+#include "Circle.h"
+#include "Rectangle.h"
 #include <iostream>
 
 int main() {
-	IDeathEater* death_eaters[3];
+	IShape* shapes[2];
 
 	//生成
-	printf("生成フェーズ\n");
-	for (int i = 0; i < 3; ++i) {
+	for (int i = 0; i < 2; ++i) {
 		if (i < 1) {
-			death_eaters[i] = new Dementor();
+			shapes[i] = new Circle();
 		}
 		else {
-			death_eaters[i] = new Load();
+			shapes[i] = new Rectangle();
 		}
 	}
 
-	//攻撃
-	printf("\n攻撃フェーズ\n");
-	for (int i = 0; i < 3; ++i) {
-		death_eaters[i]->Attack();
+	//面積計算
+	for (int i = 0; i < 2; ++i) {
+		shapes[i]->Size();
+	}
+
+	//描画
+	for (int i = 0; i < 2; ++i) {
+		shapes[i]->Draw();
 	}
 
 	//破棄
-	printf("\n破棄フェーズ\n");
-	for (int i = 0; i < 3; ++i) {
-		delete death_eaters[i];
+	for (int i = 0; i < 2; ++i) {
+		delete shapes[i];
 	}
 
 	return 0;
