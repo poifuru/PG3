@@ -9,7 +9,6 @@ charset = utf-8
 cpp_generate_documentation_comments = xml
 
 # Visual C++ の書式設定
-
 indent_style = tab
 indent_size = 4
 tab_width= 4

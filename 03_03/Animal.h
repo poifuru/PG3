@@ -1,13 +1,13 @@
 #pragma once
 
-class DeathEater {
+class Animal {
 public:		//メンバ関数
 	//コンストラクタ
-	DeathEater();
+	Animal();
 	//デストラクタ
-	virtual ~DeathEater();
-	//攻撃
-	virtual void Attack();
+	virtual ~Animal();
+	//鳴く
+	virtual void Cry();
 protected:	//メンバ変数
 	//名前
 	const char* name_;
