@@ -1,11 +1,13 @@
 #include <stdio.h>
-template <typename type>
 
+// テンプレート関数
+template <typename type>
 type Min(type num1, type num2) {
-	if(num1 < num2) {
+	// num1が小さければnum1を、そうでなければ（同じ場合も含む）num2を返す
+	if (num1 < num2) {
 		return num1;
 	}
-	else if(num2 < num1) {
+	else {
 		return num2;
 	}
 }
