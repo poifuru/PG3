@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <iostream>
 #include <list>
-using namespace std;
+#include <cstring>
 
 int main() {
-	list<const char*> yamanoteLine{
+	std::list<const char*> yamanoteLine{
 		"Tokyo",
 		"Kanda",
 		"Akihabara",
@@ -35,16 +35,16 @@ int main() {
 		"Yurakucho",
 	};
 
-	list<const char*>::iterator itr;
+	std::list<const char*>::iterator itr;
 
 	printf("Since1970\n");
 	for (auto itr = yamanoteLine.begin(); itr != yamanoteLine.end(); itr++) {
-		cout << *itr << "\n";
+		std::cout << *itr << "\n";
 	}
 
 	//リストに入っている文字列をすべて出力
-	for (list<const char*>::iterator itr = yamanoteLine.begin(); itr != yamanoteLine.end(); ++itr) {
-		if (*itr == "Tabata") {
+	for (std::list<const char*>::iterator itr = yamanoteLine.begin(); itr != yamanoteLine.end(); ++itr) {
+		if (strcmp(*itr, "Tabata") == 0) {
 			itr = yamanoteLine.insert(itr, "Nishi-Nippori");
 			++itr;
 		}
@@ -52,12 +52,12 @@ int main() {
 
 	printf("\nSince2019\n");
 	for (auto itr = yamanoteLine.begin(); itr != yamanoteLine.end(); itr++) {
-		cout << *itr << "\n";
+		std::cout << *itr << "\n";
 	}
 
 	//リストに入っている文字列をすべて出力
-	for (list<const char*>::iterator itr = yamanoteLine.begin(); itr != yamanoteLine.end(); ++itr) {
-		if (*itr == "Tamachi") {
+	for (std::list<const char*>::iterator itr = yamanoteLine.begin(); itr != yamanoteLine.end(); ++itr) {
+		if (strcmp(*itr, "Tamachi") == 0) {
 			itr = yamanoteLine.insert(itr, "Takanawa Gateway");
 			++itr;
 		}
@@ -65,7 +65,7 @@ int main() {
 
 	printf("\nSince2022\n");
 	for (auto itr = yamanoteLine.begin(); itr != yamanoteLine.end(); itr++) {
-		cout << *itr << "\n";
+		std::cout << *itr << "\n";
 	}
 
 	return 0;
