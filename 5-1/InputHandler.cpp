@@ -1,22 +1,25 @@
 #include "InputHandler.h"
 #include "Novice.h"
 
+InputHandler::InputHandler() {
+	moveLeft_ = std::make_unique<MoveLeftCommand>();
+	moveRight_ = std::make_unique<MoveRightCommand>();
+}
+
 ICommand* InputHandler::HandleInput() {
 	if (Novice::CheckHitKey(DIK_D)) {
-		return pressKeyD_;
+		return pressKeyD_.get();
 	}
 	if (Novice::CheckHitKey(DIK_A)) {
-		return pressKeyA_;
+		return pressKeyA_.get();
 	}
 	return nullptr;
 }
 
 void InputHandler::AssignMoveLeftCommand2PressKeyA() {
-	ICommand* command = new MoveLeftCommand();
-	pressKeyA_ = command;
+	pressKeyA_ = std::move(moveLeft_);
 }
 
 void InputHandler::AssignMoceRightCommand2PressKeyD() {
-	ICommand* command = new MoveRightCommand();
-	pressKeyD_ = command;
+	pressKeyD_ = std::move(moveRight_);
 }

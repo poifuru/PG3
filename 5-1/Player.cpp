@@ -19,5 +19,5 @@ void Player::MoveRight() {
 }
 
 void Player::MoveLeft() {
-	pos_.y -= speed_;
+	pos_.x -= speed_;
 }

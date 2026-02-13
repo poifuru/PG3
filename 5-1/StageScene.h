@@ -1,4 +1,5 @@
 #pragma once
+#include <memory>
 #include "Player.h"
 #include "Command.h"
 #include "InputHandler.h"
@@ -12,7 +13,7 @@ public:
 	void Draw();
 
 private:
-	InputHandler* inputHandler_ = nullptr;
+	std::unique_ptr<InputHandler> inputHandler_ = nullptr;
 	ICommand* iCommand_ = nullptr;
-	Player* player_;
+	std::unique_ptr<Player> player_ = nullptr;
 };

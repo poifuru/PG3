@@ -5,12 +5,12 @@ StageScene::StageScene() {
 }
 
 void StageScene::Init() {
-	inputHandler_ = new InputHandler();
+	inputHandler_ = std::make_unique<InputHandler>();
 
 	inputHandler_->AssignMoceRightCommand2PressKeyD();
 	inputHandler_->AssignMoveLeftCommand2PressKeyA();
 
-	player_ = new Player();
+	player_ = std::make_unique<Player>();
 }
 
 void StageScene::Update() {

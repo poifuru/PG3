@@ -1,4 +1,5 @@
 #include <Novice.h>
+#include <memory>
 #include "StageScene.h"
 
 const char kWindowTitle[] = "学籍番号";
@@ -13,7 +14,7 @@ int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int) {
 	char keys[256] = {0};
 	char preKeys[256] = {0};
 
-	StageScene* scene = new StageScene();
+	std::unique_ptr<StageScene> scene = std::make_unique<StageScene>();
 	scene->Init();
 
 	// ウィンドウの×ボタンが押されるまでループ
